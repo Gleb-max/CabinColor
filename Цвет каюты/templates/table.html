@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="center-header">
+    <h2>Оформление каюты</h2>
+</div>
+<div class="my-list">
+    <table>
+        <tr>
+            <th>Цвет стен</th>
+            <th>Эмблема</th>
+        </tr>
+
+        <tr>
+            <td width="50%" bgcolor="{{ color }}"></td>
+            <td width="50%"><img class="emblem" src="{{url_for('static', filename='img/' + image)}}"></td>
+        </tr>
+    </table>
+</div>
+{% endblock %}
